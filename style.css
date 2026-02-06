@@ -1,0 +1,132 @@
+/* ====== RESET เบา ๆ ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ====== BODY ====== */
+body {
+  background: #f4f6f8;
+  padding: 40px;
+  color: #333;
+}
+
+/* ====== หัวข้อ ====== */
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* ====== TABLE ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background: #f9fbfc;
+}
+
+tr:hover {
+  background: #eef6ff;
+  transition: 0.2s;
+}
+
+/* ====== ปุ่ม ====== */
+.btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+/* ปุ่มแก้ไข */
+.btn-edit {
+  background: #f1c40f;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* ปุ่มลบ */
+.btn-del {
+  background: #f87171;
+  color: #fff;
+}
+
+.btn-del:hover {
+  background: #ef4444;
+  transform: scale(1.05);
+}
+
+/* ====== จัดการหลายปุ่ม ====== */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.list-top{
+  margin-bottom: 16px;
+}
+
+.btn-back{
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(90deg, #38bdf8, #22d3ee);
+  box-shadow: 0 6px 16px rgba(56,189,248,0.35);
+  transition: all .25s ease;
+}
+
+.btn-back:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(56,189,248,0.45);
+}
+.page-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* ปุ่มกลับ */
+.btn-back{
+  box-shadow: 0 10px 22px rgba(56,189,248,0.45);
+  color: #0369a1;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-back:hover{
+  background: #bae6fd;
+}
